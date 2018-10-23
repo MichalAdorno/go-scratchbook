@@ -1,0 +1,17 @@
+#Dockerfile of Golang apps
+# FROM golang:1.11.1-alpine3.8
+FROM golang:onbuild
+
+# RUN mkdir -p /opt/golang
+
+# WORKDIR /opt/golang
+
+# COPY $PWD /opt/golang
+
+# RUN go get "github.com/gorilla/mux" && \
+#     go clean && \
+#     go build
+
+# CMD ["docker1"]
+
+EXPOSE 8080
