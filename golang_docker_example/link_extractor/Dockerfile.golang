@@ -1,0 +1,14 @@
+FROM golang
+
+RUN mkdir /app 
+ADD . /app/ 
+WORKDIR /app 
+
+ENV PORT 8030
+
+ENTRYPOINT ["/app/link_extractor"]
+#/link_extractor localhost 8030
+
+CMD ["0.0.0.0", "8030"]
+
+EXPOSE 8030
