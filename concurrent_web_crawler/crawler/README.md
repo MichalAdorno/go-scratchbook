@@ -11,11 +11,11 @@ Usage:
 ```
     go clean
     go build
-    ./concurrent_web_crawler [depth] [list of space-separated http addresses]
+    ./crawler [depth] [list of space-separated http addresses]
 ```
 For example:
 ```
-    ./concurrent_web_crawler 3 http://wikipedia.com 1> links.txt 2> errors.txt
+    ./crawler 3 http://wikipedia.com 1> links.txt 2> errors.txt
 ```
 
 
